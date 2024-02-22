@@ -4,7 +4,7 @@ import CategoryItem from '../components/CategoryItem'
 import { colors } from '../global/colors'
 import React from 'react'
 
-const Categories = ({setCategorySelected}) => {
+const Categories = ({navigation}) => {
   return (
     <View style={{flex: 1,}}>
       <View style={styles.container}>
@@ -13,9 +13,10 @@ const Categories = ({setCategorySelected}) => {
       <FlatList
       data={categories}
       renderItem={({item}) => (
-        <CategoryItem category={item} setCategorySelected={setCategorySelected}/>
+        <CategoryItem category={item} navigation={navigation}/>
       )}
-      keyExtractor={(category) => category}/>
+      keyExtractor={(category) => category}
+      />
     </View>
   )
 }
