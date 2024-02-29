@@ -40,7 +40,7 @@ export default ItemDetail
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: colors.azulMarino,
+        backgroundColor: colors.azulClaro,
     },
     image:{
         marginVertical: 12,

@@ -4,7 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import Constants from 'expo-constants';
 import { useFonts } from 'expo-font';
 import { fonts } from './src/global/fonts'
-import Navigator from './src/navigation/Navigator';
+import TabNavigator from './src/navigation/TabNavigator';
+import { Provider } from 'react-redux';
+import store from './src/store'
  
 
 export default function App() {
@@ -14,8 +16,11 @@ export default function App() {
   }
 
   return (
+    
     <View style={styles.container}>
-      <Navigator/>
+      <Provider store={store}>
+        <TabNavigator/>
+      </Provider>
     </View>
   )
 }

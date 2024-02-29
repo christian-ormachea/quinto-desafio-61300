@@ -15,6 +15,8 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingVertical: 8,
     justifyContent: 'center',
+    borderBottomColor: 'black',
+    borderBottomWidth: 0.5,
   },
   text: {
     fontSize: 30,
